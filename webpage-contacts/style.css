@@ -1,0 +1,109 @@
+:root {
+    --color1: #F3D701;
+    --color2: #3C0000;
+    --color3: #EEF0F2;
+    --color4: #008000;
+    --color5: #63656471;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+.top {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.top h1 {
+    color: var(--color3);
+    text-shadow: 1px 1px 4px var(--color5);
+    font-size: 2.3rem;
+    padding: 1rem;
+}
+
+.imgTop {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.main {
+    background-color: var(--color3);
+    width: 75%;
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 14px;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2em;
+}
+
+.perfil {
+    border: 1px solid var(--color2);
+    text-align: center;
+    width: 18em;
+    border-radius: 14px;
+    padding: 0.7rem 0 0 0;
+}
+
+.imgCont {
+    border-radius: 50%;
+    border: 2px solid var(--color4);
+    padding: 1px;
+}
+
+.status {
+    color: var(--color4);
+    padding-bottom: .5em;
+}
+
+.nameUser {
+    color: var(--color2);
+    font-weight: 600;
+}
+
+.btm {
+    background-color: var(--color5);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    padding-top: 6px;
+    padding-bottom: 3px;
+}
+
+.btm img {
+    margin: 0 10px;
+}
+
+.emailUser {
+    padding: .5rem;
+}
+
+.celUser {
+    padding-bottom: .5rem;
+}
+
+.bottom {
+    padding: 1rem 0;
+}
+
+.bottom p {
+    text-align: center;
+    color: var(--color2);
+}
+
+span {
+    font-weight: 700;
+}
+
+

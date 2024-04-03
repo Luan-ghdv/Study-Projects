@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            /*flex-direction: row-reverse;  faz com que os objetos ficam em linha no lado oposto.*/
+            justify-content: right;
+            align-items: center;
+        }
+        ul li{
+            border: 1px solid black;
+            width: 10%;
+            height: 50px;
+            margin: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            /*display: inline-block;*/
+            
+        }
+        .first{
+            background-color: red;
+        }
+        .second{
+            background-color: green;
+        }
+        .third{
+            background-color: yellow;
+        }
+        .fourth{
+            background-color: blue;
+        }
+        /*O que aprendi é que para usar o inline, block ou inline-block tem que usar no item quer. Diferente do flex que é na caixa que deseja ou invés dos items.*/
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="first">First</li>
+        <li class="second">Second</li>
+        <li class="third">Third</li>
+        <li class="fourth">Fourth</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,171 @@
+:root {
+    --color1: #D1D9DA;
+    --color2: #080705;
+    --color3: #66717E;
+    --color4: #E85F5C;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+/*div, header, nav, ul, footer {
+    border: 3px dotted var(--color4);
+}*/
+
+div, header {
+    padding: 2rem 0 2rem 0;
+}
+
+.top {
+    background-color: var(--color2);
+    color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+}
+
+.top_p1Title {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.itemMenu {
+    display: inline-block;
+    margin: .6rem;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 700;
+    color:var(--color1);
+    border: 2px solid var(--color1);
+    padding: .6rem;
+}
+
+.itemMenu:hover {
+    color: var(--color2);
+    background-color: var(--color1);
+    border: 2px solid var(--color3);
+}
+
+.p1Title {
+    color: var(--color2);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.p1title_section1 {
+    width: 20%;
+    line-height: 3rem;
+}
+
+.btn {
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #66717E;
+    width: 10%;
+    border-radius: 6px;
+    color: var(--color2);
+    text-align: center;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.section {
+    height: 400px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, var(--color1), var(--color3));
+}
+
+.section2 {
+    height: 450px;
+}
+
+.cursosCards {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.p1title_section2 {
+    text-align: center;
+}
+
+.cursos {
+    width: 32%;
+    border: 1px solid var(--color3);
+    padding: 1.6rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.titleCursos {
+    text-align: left;
+}
+
+.pCursos {
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.btn_section2 {
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.section3 {
+    background: linear-gradient(to right, var(--color1), var(--color3));
+}
+
+.pEscola {
+    font-size: 1.1em;
+    letter-spacing: .1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    width: 40%;
+}
+
+.p1title_section3 {
+    text-align: center;
+} 
+
+.p1Title_section4 {
+    text-align: center;
+}
+
+.address {
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.bottom {
+    background-color: var(--color2);
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom span {
+    font-style: italic;
+    font-weight: 700;
+}
