@@ -21,19 +21,20 @@
 }
 
 .topMenu {
-    /*vazio por enquanto*/
+    margin-top: 1em;
 }
 
 .listMenu {
     padding: .7rem 0;
 }
 
-.listMenu a {
+.listMenu a, .portfolio-pages div a {
     text-decoration: none;
     color: var(--color02);
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    padding: .6rem .9rem;
+    /*padding: .6rem .9rem;*/
+    padding: .2rem;
     margin: 0 .8rem;
     text-transform: uppercase;
     border-bottom: 1px solid var(--color02);
@@ -43,6 +44,7 @@
 .listMenu a:hover {
     background-color: var(--color-transparent01);
     color: var(--color01);
+    padding: .4rem;
 }
 
 .title-page {
@@ -140,6 +142,32 @@
 
 .portfolio a {
     text-decoration: none;
+}
+
+.portfolio-pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-pages div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.portfolio-pages div a {
+    text-align: center;
+}
+
+.portfolio-pages div a:hover {
+    border-bottom: 2px solid var(--color02);
+    color: var(--color01);
+}
+
+.portfolio div img {
+    width: 230px;
+    margin: .4em auto;
 }
 
 .obs-info {
