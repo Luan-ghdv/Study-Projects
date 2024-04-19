@@ -98,6 +98,7 @@
     font-weight: 400;
     text-align: justify;
     padding-bottom: 2.2em;
+    font-size: 1em;
 }
 
 .photo-article {
@@ -174,4 +175,13 @@
     font-family: "Roboto", sans-serif;
     font-style: italic;
     font-weight: 400;
+}
+
+footer {
+    background-color: var(--color02);
+    padding: 2em 0;
+    font-family: "Roboto", sans-serif;
+    color: var( --color01);
+    text-align: center;
+    font-weight: 500;
 }

@@ -27,6 +27,7 @@ body {
     justify-content: space-between;
     background-color: var(--color1);
     padding: .6em .4em;
+    margin-top: .2em;
 }
 
 .topLogo {
@@ -127,4 +128,3 @@ body {
     background-color: var(--color2);
     color: var(--color1);    
 }
-
