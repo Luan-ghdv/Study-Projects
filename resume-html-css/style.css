@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@font-face {
+    font-family: 'frozbite';
+    src: url('media/FROZBITE.otf') format('opentype'), url('media/FROZBITE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    color: rgb(54, 52, 52);
+    background-color: grey;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    width: min-content;
+    height: max-content;
+    padding: 4px;
+    margin-top: 50px;
+    margin-bottom: 33px;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.n1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 31px;
+}
+
+.n2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 31px;
+}
+
+.n3 {
+    font-family: 'frozbite';
+    font-size: 31px;
+}
+
+a#pagina {
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+div#pseudo-classe {
+    background-color: antiquewhite;
+    display: inline-block;
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    text-align: justify;
+}
+
+div#pseudo-classe:hover {
+    background-color: rgb(78, 12, 12);
+    color: rgb(2, 172, 73);
+}
+
+div#pseudo-classe-2:hover {
+    color: red;
+}
+
+div#rodape {
+    margin-bottom: 15px;
+}

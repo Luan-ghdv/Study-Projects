@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste...teste...</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <h2>Parágrafo</h2>
+    <p id="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, incidunt commodi? Voluptatum nulla ea molestias nihil consectetur illum laborum nam quam aliquam, assumenda perferendis iusto voluptatem officia deleniti maiores doloremque.
+    </p>
+
+    <h2 style="width: max-content;">Formatação de Texto</h2>
+
+    <h3>Negrito e Destaque</h3>
+    <p><b>O negrito (tag &lt;b&gt;) é usado por pura estética.</b></p>
+    <p>Já o <strong>destaque</strong> é usado quando for necessário <strong>importância e urgência</strong> (tag &lt;strong&gt;).</p>
+    <br>
+
+    <h3>Itálico e Ênfase</h3>
+    <p><i>Assim como no negrito, o itálico é por estética (tag &lt;i&gt;).</i></p>
+    <p>O ênfase (tag &lt;em&gt;) é usado assim como o destaque, quando for necessário <em>importância e urgência.</em></p>
+    <br>
+
+    <h3>Texto Marcado</h3>
+    <p>O HTML <mark>pode marcar texto também</mark>.</p>
+    <p>E com outras <mark style="background-color: blueviolet;">cores</mark> também.</p>
+    <br>
+
+    <h3>Texto Grande e Pequeno</h3>
+    <p id="text">Grande: <big>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi unde voluptatum totam quisquam dicta, quia odio amet vitae minus deserunt? Quia dolorem consequuntur cum nulla minima beatae distinctio magni fugit?</big></p>
+    <p id="text">Pequeno: <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in tempora eum molestias velit! Accusantium explicabo earum officiis. Veniam, laboriosam? Vel ipsum consectetur libero, nobis sint odio eveniet dicta? Enim.</small></p>
+    <p>OBS.: O melhor uso é através do CSS.</p>
+    <br>
+
+    <h3>Texto Deletado</h3>
+    <p id="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum quam tempore molestiae minus fugit molestias <del>qui illo obcaecati incidunt</del>, excepturi temporibus fugiat inventore, magnam soluta dolor architecto id accusamus et.</p>
+    <br>
+
+    <h3>Texto Inserido</h3>
+    <p><u>Sublinhado de forma estética </u>(tag &lt;u&gt;).</p>
+    <p>Sublinha de forma <ins>semântica</ins> (tag &lt;ins&gt;).</p>
+
+    <h3>Texto Sobrescrito</h3>
+    <p>Para inserir coisas do tipo x<sup>3</sup> + 14<sup>2</sup>.</p>
+
+    <h3>Texto Subscrito</h3>
+    <p>Para escrevir algo como: H<sub>2</sub>O</p>
+
+    <h2 style="width: max-content;">Formatação de Texto Avançado</h2>
+
+    <h3>Códito Fonte e Pré-Formatado</h3>
+    <p>O comando <code>print</code> eu uso em Python.</p>
+    <p>Código sem identação: </p>
+    <code>
+        n = int(input('Digite um valor qualquer: '))
+        print(n)
+    </code>
+    <p>Com identação: </p>
+    <pre>
+        <code>
+            n = int(input('Digite um valor qualquer: '))
+            print(n)
+        </code>
+    </pre>
+
+    <h3>Citações Simples</h3>
+    <p>Rui Barbosa: <q>Maior que a tristeza de não haver vencido é a vergonha de não ter lutado!</q></p>
+
+    <h3>Citações Completas</h3>
+    <p>Segundo Jeff Noble, no seu livro para Leigos: </p>
+    <blockquote cite="https://books.google.com.br/books?id=1cmF0twN4rIC&printsec=frontcover&dq=html5&hl=pt-BR&sa=X&ved=2ahUKEwjwi8Oo9LXvAhWVJrkGHV2TBqoQ6AEwBnoECAAQAg#v=onepage&q=html5&f=false">
+        A diferença entre elementos inline e um bloco de texto pe importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+
+    <h3>Abreviações</h3>
+    <p>Estou estudando <abbr title="Linguagem de Marcação de Hipertexto">HTML</abbr> e <abbr title="Folhas de Estilo em Cascatas">CSS</abbr>.</p>
+
+    <h3>Texto Invertido.</h3>
+    <p><bdo dir="rtl">Estou estudando HTML e CSS.</bdo></p>
+
+    <H2>Listas</H2>
+
+    <h3>Lista Ordenadas</h3>
+    <ol>
+        <li>Devil May Cry 5: Special Edition</li>
+        <li>No Man's Sky</li>
+        <li>Assassin's Creed Valhalla</li>
+        <li>Puyo Puyo Tetris 2</li>
+    </ol>
+
+    <h3>Lista não Ordenadas</h3>
+    <ul>
+        <li>Deadloop</li>
+        <li>Resident Evil Village</li>
+        <li>Far Cry 6</li>
+        <li>Returnal</li>
+    </ul>
+
+    <h3>Lista Mista</h3>
+    <ol type="I">
+        <li>PS4</li>
+        <ul type="square">
+            <li>Watch Dogs Legion</li>
+            <li>The Last of Us Part II</li>
+            <li>Cuphead</li>
+        </ul>
+        <li>PS5</li>
+        <ul type="circle">
+            <li>Final Fantasy XVI</li>
+            <li>Disco Elysium - The Final Cut</li>
+            <li>Immortals Fenyx Rising</li>
+        </ul>
+    </ol>
+
+    <h3>Lista de Descrição</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação</dd>
+        <dt>Python</dt>
+        <dd>Linguagem de programação </dd>
+    </dl>
+    <br>
+
+    <h2>Links</h2>
+    <br>
+
+    <h3>Links Externos</h3>
+    <p>Acesse meu Github: <a href="https://github.com/Luan-ghdv" target="_blank" rel="external">Luan Amaral</a>.</p>
+    <br>
+
+    <h3>Links Internos</h3>
+    <div id='rodape'>
+        <a id="pagina" href="index_02.html" target="_self" rel="next">02</a>
+        <a id="pagina" href="index_03.html" target="_self" rel="next">03</a>
+        <a id="pagina" href="index_04.html" target="_self" rel="next">04</a>
+    </div>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p#text {
+            background-image: linear-gradient(to bottom, rgb(218, 9, 138), rgb(228, 224, 224));              
+        }
+
+        p#text-02 {
+            background-image: linear-gradient(to left, #c92677, #dcccff, #f6f2ff, #48a9a6,
+             #007cbe);
+            background-attachment: fixed;
+            border-radius: 2px;
+        }
+        div > p {
+        display: none;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: max-content;
+        }
+
+        .p-elem::before {
+            content: ' ☠ ';
+        }
+
+        .p-elem::after {
+            content: '[link]';
+        }
+
+        .p-elem {
+            text-decoration: none;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>    
+    <title>Teste 03</title>
+</head>
+<body>
+    <h1>Olá, Mundo! <u>3</u></h1>
+
+    <h2>Degrade</h2>
+        <p id="text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab impedit sunt repellendus accusamus quis saepe harum et dolor dicta rem voluptas quod, nisi atque ullam vero iusto provident? Saepe, facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. In laudantium, harum natus minima quaerat voluptas hic sed dolorum necessitatibus recusandae! Porro, molestias quo ab eos inventore vero quae ad sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores veniam. Praesentium aliquam reprehenderit deserunt enim facilis aliquid maiores sunt sed totam at facere ducimus, nemo sapiente quaerat tenetur! Debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis recusandae alias eum repellat ullam corrupti neque ratione porro? Est et unde excepturi aliquam accusantium quasi perspiciatis, consectetur provident deleniti nihil. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni libero fugiat laborum porro deserunt quis, eligendi perspiciatis optio reiciendis voluptatum impedit corporis doloribus ipsum quam aliquid culpa officiis inventore tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta, sit hic facere, id eaque ipsum voluptas laborum a dolores dolore assumenda quae laudantium similique esse perferendis, repudiandae est culpa.
+            <p>
+
+        <p id="text-02">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam non in, illum iure cupiditate! Aut id minus nisi magnam quod corporis. Magnam cupiditate nostrum porro obcaecati voluptatibus debitis iure! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro a, saepe voluptatum deleniti, consequuntur corporis omnis dolores animi natus hic beatae. Ratione animi dicta est, exercitationem nihil nostrum neque deserunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, placeat ipsa! Perferendis consequuntur omnis corporis earum animi accusamus modi, quia ut ad reprehenderit velit consequatur debitis perspiciatis? Quae, corporis facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi dolor odit, ducimus incidunt dolores laborum. Minus voluptatum rem obcaecati, doloribus corporis suscipit non laborum. Maxime quidem suscipit corporis quo!
+        </p>
+    <br>
+
+    <h2>Fontes</h2>
+    <p class="n1">Matheus Luan do Amaral Souza <abbr title="Fonte inserida do CSS">(?)</abbr></p>
+    <p class="n2">Matheus Luan do Amaral Souza <abbr title="Fonte importada via sites externos">(?)</abbr></p>
+    <p class="n3">Matheus Luan do Amaral Souza <abbr title="Fonte baixada">(?)</abbr></p>
+
+    <h2 style="width: max-content;">Pseudo-Classes</h2>
+    <div id="pseudo-classe">Passe o mouse por cima para mudar de cor a caixa.</div>
+    <div id="pseudo-classe">Passe o mouse por cima para mudar de cor a caixa.</div>
+    <p><b>Passe o mouse sobre o texto abaixo.</b></p>
+    <div id="pseudo-classe-02">
+        Passe o mouse aqui!
+        <p>Olá! Tudo bem? Texto escondido :)</p>
+    </div>
+
+    <h2 style="width: max-content;">Pseudo-Elementos</h2>
+    <p><a class="p-elem" href="https://twitter.com/Luan_Matcker">Meu Perfil no Twitter</a></p>
+    <pre>
+
+    </pre>
+    <div id='rodape'>
+        <a id="pagina" href="index.html" target="_self" rel="prev">01</a>
+        <a id="pagina" href="index_02.html" target="_self" rel="prev">02</a>
+        <a id="pagina" href="index_04.html" target="_self" rel="next">04</a>
+    </div>
+</body>
+</html>

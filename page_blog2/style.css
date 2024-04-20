@@ -1,0 +1,138 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'GreatVibe';
+    src: url(media/GreatVibes-Regular.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #B0828A;
+    --cor2: #7D3743;
+    --cor3: #634A4E;
+    --cor4: #B04D5E;
+    --cor5: #E3A8B2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+header > h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.6em;
+    padding-bottom: 16px;
+    text-shadow: 1px 1px 1px black;
+}
+
+p#header {
+    font-size: 1.1em;
+    padding-bottom: 15px;
+    max-width: 842px;
+    width: 100%;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--cor3);
+    font-size: 1.4em;
+    padding-bottom: 6px;
+    box-shadow: 0px 1px 1px black;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav > a {
+    text-decoration: none;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-weight: 632;
+    color: black;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: rgba(0, 0, 0, 0.508);
+    text-decoration: underline;
+    font-style: italic;
+    padding-bottom: 4px;
+}
+
+main {
+    background-color: white;
+    color: black;
+    min-width: 320px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 5px;
+    padding-right: 21px;
+    padding-left: 21px;
+    box-shadow: 1px 0px 7px black;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+main h2 {
+    font-family: 'GreatVibe';
+    font-weight: lighter;
+    font-size: 61px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    text-decoration: underline 2px var(--cor4);
+}
+
+.paragrafo {
+    font-size: 1.3em;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-color: var(--cor4);
+    padding: 1px;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+
+ul > li {
+    font-size: 1.2em;
+    text-align: justify;
+    padding-right: 20px;
+    margin-bottom: 6px;
+}
+
+div {
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+}
+
+footer {
+    padding: 2em 0;
+    text-align: center;
+}

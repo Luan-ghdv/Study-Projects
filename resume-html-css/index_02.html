@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste 02</title>
+</head>
+<body>
+    <h1>Olá, Mundo! <u>2</u></h1>
+
+    <h2>Áudio</h2>
+    <audio src="media/DMC4-ost.mp3" controls autoplay></audio>
+    <a href="media/DMC4-ost.mp3">Download</a>
+    <br>
+    <audio controls autoplay>
+        <source src="media/DMC_Anime - ost.mp3" type="audio/mp3">
+        <source src="media/DMC4-ost.mp3" type="audio/mp3"> 
+    </audio>
+    <a href="media/DMC_Anime - ost.mp3">Download</a>
+
+
+    <h2>Imagens</h2>
+
+    <h3>Imagem Original</h3>
+    <img src="img/ME.jpg" alt="Mass Effect Legendary Edition">
+    <h3>Imagem com tamanho personalizado</h3>
+    <img src="img/ME.jpg" alt="Mass Effect Legendary Edition" width="400px" height="400px">
+    <h3>Imagem com tamanho personalizado baseado no tamanho da página</h3>
+    <picture>
+        <source media="(max-width: 530px)" srcset="img/imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="img/imagem-media.png" type="image/png">
+        <img src="img/imagem-grande.png" alt="imagem alterada">
+    </picture>
+ 
+    <h2>Vídeos</h2>
+
+    <h3>Vídeos em hóspedagem própria</h3>
+    <video width="600px" poster="img/tumbnail.png" controls loop>
+        <source src="media/video1.m4v" type="video/m4v">
+        <source src="media/video1.mp4" type="video/mp4">
+        <source src="media/video1.webm" type="video/webm">
+        <p>Se o video não está reproduzindo significa que o navegador que você está usando não é compatível com nenhum formato de video utilizado pela página. Por favor, faça o download do video: <a href="media/video1.mp4">Download</a></p>
+    </video>
+    <br>
+    <video src="media/video2.mp4" controls height="800px" width="400px"></video>
+
+    <h3>Vídeos em hóspedagem externa</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DIraePpIAog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <pre>
+
+
+    </pre>
+    <div id='rodape'>
+        <a id="pagina" href="index.html" target="_self" rel="prev">01</a>
+        <a id="pagina" href="index_03.html" target="_self" rel="next">03</a>
+        <a id="pagina" href="index_04.html" target="_self" rel="next">04</a>
+    </div>
+</body>
+</html>
