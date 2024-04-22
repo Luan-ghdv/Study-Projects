@@ -6,13 +6,14 @@
     <title>Static Page 01</title>
 </head>
 <body>
+    <!--
    <header class="top">
     <nav class="topMenu">
         <div class="listMenu">
-            <a href="#" id="">home</a>
-            <a href="#" id="">about</a>
-            <a href="#" id="">portfolio</a>
-            <a href="#" id="">contact</a>
+            <a href="#" id="home">home</a>
+            <a href="#about-section" id="about">about</a>
+            <a href="#skills-section" id="skills">Skills</a>
+            <a href="#portfolio-section" id="portfolio">portfolio</a>
         </div>
     </nav>
 
@@ -20,9 +21,24 @@
         <h1>My website</h1>
     </div>
    </header>
+-->
+
+    <header class="top">
+        <div class="header-container">
+            <nav class="topMenu">
+                <ul class="listMenu">
+                    <li><a href="#" id="home">home</a></li>
+                    <li><a href="#about-section" id="about">about</a></li>
+                    <li><a href="#portfolio-section" id="portfolio">portfolio</a></li>
+                    <li><a href="#" id="contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+            <h1>My Website</h1>
+    </header>
 
    <main class="main-page">
-        <article class="about">
+        <article class="about" id="about-section">
             <h2>About Me</h2>
             <h4>Lorem ipsum dolor sit.</h4>
 
@@ -42,7 +58,7 @@
             </div>
         </article>
 
-        <div class="skills">
+        <div class="skills" id="skills-section">
             <h2>My Skills</h2>
 
             <div class="skills-icon">
@@ -66,26 +82,33 @@
             </div>
         </div>
 
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio-section">
             <h2>Portfolio</h2>
             <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro qui officiis maxime corrupti delectus.</h4>
-
+            
             <div class="portfolio-pages">
-                <div>
-                    <a href="https://github.com/Luan-ghdv/Study-Projects/tree/main/webpage-contacts" target="_blank">Página de contatos</a>
-                    <img src="img/port01.png" alt="Página web de contatos">
+                <div class="portfolio-links">
+                    <a href="https://github.com/Luan-ghdv/Study-Projects/tree/main/webpage-contacts">
+                        <img src="img/port01.png" alt="Página web de contatos">
+                        <p>Página de contatos</p>
+                    </a>
                 </div>
-
-                <div>
-                    <a href="https://github.com/Luan-ghdv/Study-Projects/tree/main/subscription_page" target="_blank">Página de assinatura</a>
-                    <img src="img/port02.png" alt="Página web de assinatura">
+            
+                <div class="portfolio-links">
+                    <a href="https://github.com/Luan-ghdv/Study-Projects/tree/main/subscription_page">
+                        <img src="img/port02.png" alt="Página web de assinatura">
+                        <p>Página de assinatura</p>
+                    </a>
                 </div>
-
-                <div>
-                    <a href="">Calculadora Web <span class="obs-info">em desenvolvimento</span></a>
-                    <img src="" alt="">
+            
+                <div class="portfolio-links">
+                    <a href="#">
+                        <img src="img/port03.png" alt="Projeto 3">
+                        <p>Nome do Projeto 3</p>
+                    </a>
                 </div>
             </div>
+            
         </div>
    </main>
 
