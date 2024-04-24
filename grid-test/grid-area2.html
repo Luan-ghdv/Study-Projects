@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .gridContainer{
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgray;
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr 30px;
+            grid-template-rows: 1fr 1fr 1fr 70px;
+            grid-template-areas: 
+            "header main main ."
+            "header main main ."
+            "header main main ."
+            "footer footer footer footer";*/
+            gap: 2em;
+            grid-template: 
+                "header main main ." 1fr
+                "header main main ." 1fr
+                "header main main ." 1fr
+                "footer footer footer footer" 70px
+                / 1fr 1fr 1fr 30px;
+        }
+        .gridItem{
+            border: 1px solid black;
+            padding: 15px;
+            font-family: sans-serif;
+            color: aliceblue;
+        }
+        .header{
+            background-color: brown;
+            /*grid-row: 1 / -1;
+            grid-column: 1 / 1;*/
+            grid-area: header;
+        }
+        .main{
+            background-color: darkgray;
+            /*grid-row: 1 / 4;
+            grid-column: 2 / -2;*/
+            grid-area: main;
+        }
+        .footer{
+            background-color: black;
+            /*grid-row: 4 / 4;
+            grid-column: 1 / -1;
+            z-index: 1;*/
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridContainer">
+        <header class="gridItem header">Header</header>
+        <main class="gridItem main">Main</main>
+        <footer class="gridItem footer">Footer</footer>
+    </div>
+</body>
+</html>
