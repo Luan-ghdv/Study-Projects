@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px) {
+    .topMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--color02);
+    }
+
+    .listMenu {
+        display: flex;
+        width: 70%;
+        gap: 1.2em;
+        padding: 10px .2em;
+        padding: .4em;
+    }
+
+    h1 {
+        width: 70%;
+    }
+}
