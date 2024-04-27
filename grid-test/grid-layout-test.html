@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Test</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .gridContainer{
+            height: 100vh;
+            background-color: lightblue;
+            display: grid;
+            gap: 1.6em;
+            grid-template-columns: 10em 1fr 1.1em;
+            grid-template-rows: 1fr 1fr 1fr 4em;
+            grid-template-areas: 
+                "header main ."
+                "header main ."
+                "header main ."
+                "footer footer footer";
+        }
+        .gridItem{
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            background-color: aliceblue;
+            border: 1px solid darkgrey;
+        }
+        .header{
+            grid-area: header;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .link_img{
+            display: block;
+            margin-bottom: 1em;
+            padding-bottom: .8em;
+            border-bottom: 1px solid blue;
+        }
+        .link_img img{
+            border: 1px solid blue;
+            border-radius: 50%;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul li{
+            margin-bottom: 1em;
+        }
+        .link_list{
+            display: block;
+            padding: 8px 28px;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .link_list:hover{
+            border-top: 1px solid blue;
+            border-bottom: 1px solid blue;
+        }
+        .main{
+            grid-area: main;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        article{
+            line-height: 1.4;
+        }
+        h1{
+            font-weight: 500;
+        }
+        h2{
+            font-weight: 300;
+            font-style: italic;
+            margin-bottom: .9em;
+        }
+        p{
+            text-align: justify;
+        }
+        .footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridContainer">
+        <header class="gridItem header">
+            <a href="#" class="link_img">
+                <img src="https://placehold.co/90x90/png" alt="">
+            </a>
+            <nav>
+                <ul>
+                    <li><a class="link_list" href="#">Item1</a></li>
+                    <li><a class="link_list" href="#">Item2</a></li>
+                    <li><a class="link_list" href="#">Item3</a></li>
+                    <li><a class="link_list" href="#">Item4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="gridItem main">
+            <article>
+                <h1>Lorem ipsum dolor sit.</h1>
+                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita dicta tenetur atque distinctio harum facilis, quos laudantium necessitatibus! Dolor a consectetur dolores quia ullam alias aliquid, nihil fuga, excepturi eligendi adipisci fugit harum provident temporibus assumenda voluptates! Illum laboriosam accusantium cumque quia sed porro iure ducimus quo praesentium, veniam eaque cum impedit sunt magni aliquam soluta amet earum dicta fugit sapiente vitae numquam itaque similique exercitationem? Voluptatem ipsa pariatur nesciunt magnam consectetur molestias ea fugiat quasi perferendis error dolores at animi sunt consequuntur rem quis, eveniet, earum eum placeat ad. Praesentium totam, atque asperiores eligendi ad qui, harum optio, sint esse eum illo quam repellat cumque tempora unde voluptates autem aut fuga ipsa excepturi veniam debitis eveniet! Vel doloremque dolorem qui doloribus quia enim illo ipsam! Id aliquam ipsa beatae a alias quibusdam consectetur, voluptates repellendus voluptatibus, ut repellat praesentium labore asperiores error. Quod laborum enim molestiae. Aliquid quaerat tempore obcaecati quia totam tempora non adipisci minima iure nobis recusandae, dicta, ducimus enim illum officia voluptatem ab illo, fugit assumenda neque omnis autem libero iusto. Soluta ipsa atque debitis facilis magnam officia ut eos quisquam at? Libero illo aut assumenda hic dolore deserunt ratione accusantium! Pariatur, quis exercitationem! Expedita vero, deleniti porro nobis, a rem incidunt voluptatibus quod accusantium laborum sit accusamus eos et reiciendis maiores omnis perspiciatis facilis, commodi dolorum praesentium provident molestiae! Modi natus amet eaque enim illum labore, tempore id vero maxime autem molestiae minus earum voluptas, incidunt ex eligendi libero doloribus aperiam quod numquam inventore suscipit ratione pariatur ea! Reiciendis sapiente minima, esse molestias beatae eos suscipit consectetur accusamus commodi mollitia enim ea perferendis nihil dolores et excepturi ratione vero, modi reprehenderit, eveniet illum totam. Tempora, magni doloremque sequi natus facere modi maxime animi. Magnam tempora minima, corporis fugit quidem dignissimos tenetur aspernatur perferendis explicabo et porro excepturi voluptas earum numquam sint, dolore non! Voluptatibus eveniet ullam dolore!
+                </p>
+            </article>
+        </main>
+        <footer class="gridItem footer">Desenvolvido por Matheus Luan do Amaral Souza</footer>
+    </div>
+</body>
+</html>

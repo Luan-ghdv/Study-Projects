@@ -1,0 +1,79 @@
+:root {
+    --color1: #63636a;
+    --color2: #f7f7f2;
+    --font1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --big-space: 4rem;
+    --medium-space: 2rem;
+    --small-space: .4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color1);
+    font-family: var(--font1);
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-areas: 
+        "verticalMenu topMenu topMenu"
+        "verticalMenu main main"
+        "verticalMenu main main"
+        "verticalMenu main main"
+    ;
+}
+
+.verticalMenu {
+    background-color: var(--color2);
+    grid-area: verticalMenu;
+}
+
+.tittleLink {
+    text-decoration: none;
+    display: block;
+    padding-left: var(--small-space);
+}
+
+.tittleLink h1{
+    color: var(--color1);
+    margin-bottom: var(--big-space);
+    font-size: 1.8em;
+}
+
+.verticalMenu_mn {
+    list-style-type: none;
+    padding-left: var(--small-space);
+
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+
+}
+
+.verticaMenu_mn-items {
+    min-height: fit-content;
+}
+
+.verticaMenu_mn-items a {
+    text-decoration: none;
+    color: black;
+}
+
+.verticaMenu_mn-items a svg {
+    color: var(--color1);
+}
+
+.topMenu {
+    grid-area: topMenu;
+    background-color: var(--color2);
+
+    /* FLEX */
+    display: flex;
+}
