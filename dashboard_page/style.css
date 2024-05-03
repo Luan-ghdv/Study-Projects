@@ -1,10 +1,6 @@
 :root {
-    --color1: #63636a;
-    --color2: #f7f7f2;
-    --font1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --big-space: 4rem;
-    --medium-space: 2rem;
-    --small-space: .4rem;
+    --small-space: .4em;
+    --medium-space: 1.5em;
 }
 
 * {
@@ -13,114 +9,129 @@
 }
 
 body {
-    background-color: var(--color1);
-    font-family: var(--font1);
-
-    /* GRID */
+    background-color: grey;
     display: grid;
-    grid-template-columns: 180px 1fr 1fr;
-    grid-template-rows: 110px 1fr 1fr 1fr;
-    grid-template-areas: 
-        "verticalMenu topMenu topMenu"
-        "verticalMenu main main"
-        "verticalMenu main main"
-        "verticalMenu main main"
-    ;
-    gap: var(--small-space);
-}
+    grid-template-columns: 170px 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+} 
 
-.verticalMenu {
-    background-color: var(--color2);
-    grid-area: verticalMenu;
-    height: 100vh;
-    overflow: auto;
-}
-
-.tittleLink {
-    text-decoration: none;
-    display: block;
-    padding-left: var(--small-space);
+/* Menu vertical */
+.verticalMenu { 
+    background-color: white;
+    grid-column: 1 / 1;
+    grid-row: 1 / -1;
     position: sticky;
     top: 0;
-}
-
-.tittleLink h1{
-    color: var(--color1);
-    margin: var(--medium-space) 0;
-    font-size: 1.8em;
-}
-
-.verticalMenu_mn {
-    list-style-type: none;
-    padding-left: var(--small-space);
-    position: sticky;
-    top: 0;
+    max-height: 100vh;
 
     /* FLEX */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: calc(var(--medium-space) - 1em);
-
-}
-
-.verticaMenu_mn-items {
-    min-height: fit-content;
-}
-
-.verticaMenu_mn-items a, .topMenu nav li a {
-    text-decoration: none;
-    color: black;
-}
-
-.verticaMenu_mn-items a svg {
-    color: var(--color1);
-}
-
-.topMenu {
-    grid-area: topMenu;
-    background-color: var(--color2);
-    padding: var(--small-space);
-
-    /* FLEX */
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    
 }
 
-.topMenu nav li {
+.title {
+    padding: var(--medium-space) 0;
+    margin-left: var(--small-space);
     display: inline-block;
-    margin-right: calc(var(--medium-space) - 1em);
+    font-size: var(--medium-space);
+    transition: .1s;
 }
 
-.worker {
+.title:hover {
+    font-weight: 700;
+}
+
+.verticalMenu_list {
+    border-bottom: 1px solid grey;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+
+ul li {
+    list-style-type: none;
+    margin: var(--medium-space) var(--small-space);
+}
+
+svg {
+    height: 24px;
+    width: 24px;
+    vertical-align: bottom;
+}
+
+.horizontalMenu {
+    grid-column: 2 / -1;
+    grid-row: 1 / 1;
+    background-color: white;
+
     /* FLEX */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
-.worker img {
+.horizontalMenu_L {
+    display: inline-block;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 }
 
-.workerF p {
-    display: inline-block;
+main {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+
+    /* GRID */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr;
+    gap: .6em;
+    padding: 1em;
 }
 
-.workerF_Name {
-    font-size: .9rem;
+.summary {
+    background-color: white;
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: var(--small-space);
+    padding-right: var(--small-space);
+    padding: var(--small-space);
 }
 
-span {
-    border: 1px solid black;
-    margin: 0 var(--small-space);
+.summaryDivision {
+    width: 2px;
+    background-color: grey;
+    align-self: stretch;
 }
 
-.workerF_Job {
-    color: var(--color1);
-    font-size: .7rem;
+.porcentagem {
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+    width: fit-content;
+    margin: auto;
 }
 
+.produtos {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
 
+.valores {
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+}
