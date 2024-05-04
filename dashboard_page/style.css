@@ -1,6 +1,12 @@
 :root {
     --small-space: .4em;
     --medium-space: 1.5em;
+    --font-size-small: 1.1rem;
+    --font-size-medium: 1.3rem;
+    --color1: #F3F3F3;
+    --color2: #747C92; 
+    --color3: #231F20;
+    --color4: #68B684;
 }
 
 * {
@@ -9,15 +15,16 @@
 }
 
 body {
-    background-color: grey;
+    background-color: var(--color2);
     display: grid;
     grid-template-columns: 170px 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr 1fr;
+    font-family: "Reddit Mono", monospace;
 } 
 
 /* Menu vertical */
 .verticalMenu { 
-    background-color: white;
+    background-color: var(--color1);
     grid-column: 1 / 1;
     grid-row: 1 / -1;
     position: sticky;
@@ -43,14 +50,20 @@ body {
 }
 
 .verticalMenu_list {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid var(--color2);
 }
 
 a {
     text-decoration: none;
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
     display: block;
+    color: var(--color2);
+    font-weight: 600;
+}
+
+a:hover {
+    font-weight: 900;
+    color: var(--color3);
 }
 
 ul li {
@@ -67,7 +80,7 @@ svg {
 .horizontalMenu {
     grid-column: 2 / -1;
     grid-row: 1 / 1;
-    background-color: white;
+    background-color: var(--color1);
 
     /* FLEX */
     display: flex;
@@ -80,10 +93,33 @@ svg {
     display: inline-block;
 }
 
+.user {
+    display: flex;
+    align-items: center;
+    padding: var(--small-space);
+}
+
 .avatar {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    border: 1px solid var(--color2);
+    margin-right: var(--small-space);
+}
+
+.userT {
+    display: flex;
+    flex-direction: column;
+}
+
+.userName {
+    font-weight: 700;
+    color: var(--color3);
+}
+
+.userJob {
+    font-weight: 400;
+    color: var(--color2);
 }
 
 main {
@@ -99,7 +135,7 @@ main {
 }
 
 .summary {
-    background-color: white;
+    background-color: var(--color1);
     grid-column: 1 / -1;
     grid-row: 1 / 1;
     border-radius: 4px;
@@ -113,10 +149,29 @@ main {
     padding: var(--small-space);
 }
 
+.info {
+    font-weight: 700;
+    font-size: var(--font-size-small);
+    color: var(--color3);
+}
+
+.numbers {
+    color: var(--color4);
+    font-weight: 700;
+    font-size: var(--font-size-medium);
+}
+
 .summaryDivision {
     width: 2px;
-    background-color: grey;
+    background-color: var(--color2);
     align-self: stretch;
+}
+
+.btn {
+    padding: .9em;
+    border-radius: 4px;
+    background-color: var(--color4);
+    color: var(--color1);
 }
 
 .porcentagem {
