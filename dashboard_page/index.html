@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="verticalMenu">
@@ -77,31 +80,33 @@
            </ul>
         </nav>
 
-        <div>
+        <div class="user">
             <img src="img/user.jpeg" alt="" class="avatar">
-            <span>Mike</span>
-            <span>Full Stack</span>
+            <div class="userT">
+                <span class="userName">Mike</span>
+                <span class="userJob">Full Stack</span>
+            </div>
        </div>
     </header>
 
     <main>
         <section class="summary">
             <div>
-                <span>Vendas</span>
-                <span>650</span>
+                <span class="info">Vendas</span>
+                <span class="numbers">650</span>
             </div>
             <div class="summaryDivision"></div>
             <div>
-                <span>Valor produtos total</span>
-                <span>R$ 3810,00</span>
+                <span class="info">Valor produtos total</span>
+                <span class="numbers">R$ 3810,00</span>
             </div>
             <div class="summaryDivision"></div>
             <div>
-                <span>Arrecadação</span>
-                <span>R$ 222.900,00</span>
+                <span class="info">Arrecadação</span>
+                <span class="numbers">R$ 222.900,00</span>
             </div>
             <div class="summaryDivision"></div>
-            <a href="#">Saiba Mais</a>
+            <a class="btn" href="#">Saiba Mais</a>
         </section>
 
         <figure class="porcentagem">
