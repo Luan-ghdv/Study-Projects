@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('assets/font-quicksand/Quicksand-Regular.otf') format('opentype'),
+         url('assets/font-quicksand/Quicksand-Light.otf') format('opentype'),
+         url('assets/font-quicksand/Quicksand-Bold.otf') format('opentype'),
+         url('assets/font-quicksand/Quicksand-BoldItalic.otf') format('opentype'),
+         url('assets/font-quicksand/Quicksand-Italic.otf') format('opentype'),
+         url('assets/font-quicksand/Quicksand-LightItalic.otf') format('opentype') ;
+}
+
+:root {
+    --color1: #FFFFFF;
+    --color2: #0C0F0A;
+    --color3: #F1A208;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--color2);
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+main {
+    border: 2px solid var(--color2);
+    width: 300px;
+    margin: auto;
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-areas: 
+        "screen screen screen screen"
+        "ce ce divi multi "
+        "sete oito nove menos"
+        "seis cinco quatro mais"
+        "tres dois um igual"
+        "zero zero virg igual";
+
+    gap: .4em;
+    padding: .8em;
+}
+
+.screen {
+    grid-area: screen;
+    border: 1px solid var(--color2);
+    border-radius: 4px;
+    background-color: #0c0f0a2c;
+    padding: 22px 30px;
+    margin-bottom: 1.4em;
+}
+
+.ce {
+    grid-area: ce;
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.divi {
+    grid-area: divi;
+}
+
+.multi {
+    grid-area: multi;
+}
+
+.menos {
+    grid-area: menos;
+}
+
+.mais {
+    grid-area: mais;
+}
+
+.sete {
+    grid-area: sete;
+}
+
+.oito {
+    grid-area: oito;
+} 
+
+.nove {
+    grid-area: nove;
+}
+
+.seis {
+    grid-area: seis;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.quatro {
+    grid-area: quatro;
+}
+
+.um {
+    grid-area: um;
+}
+
+.dois {
+    grid-area: dois;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.virg {
+    grid-area: virg;
+}
+
+.igual {
+    grid-area: igual;
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+button {
+    border: 1px solid var(--color2);
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 10px;
+    border-radius: 4px;
+}
