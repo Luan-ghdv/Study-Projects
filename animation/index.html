@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes walk {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(560px);
+            }
+        }
+
+        body {
+            background-color: #ccc;
+        }
+
+        #anima {
+            outline: 2px solid black;
+            padding: 8px;
+            width: 600px;
+            margin: auto;
+        }
+
+        #anima div:nth-child(1) {
+            outline: 2px solid black;
+            width: 40px;
+            animation-name: walk;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            background-color: #f5e6e6
+        }
+    </style>
+</head>
+<body>
+    <div id="anima">
+        <div>caixa</div>
+    </div>
+</body>
+</html>

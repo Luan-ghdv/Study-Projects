@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        @keyframes walk {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(480px);
+            }
+        }
+
+        #anima {
+            outline: 2px solid black;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+        }
+
+        #anima div {
+            outline: 2px solid black;
+            width: 40px;
+            margin: auto;
+            animation: walk alternate 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="anima">
+        <div>caixa</div>
+    </div>
+</body>
+</html>
