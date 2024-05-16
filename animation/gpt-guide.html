@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button with Nav</title>
+  <style>
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .nav {
+            display: none;
+        }
+        
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .nav li {
+            padding: 10px 0;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .button:focus + .nav {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+  <button class="button">Menu</button>
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
