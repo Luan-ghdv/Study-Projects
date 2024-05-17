@@ -1,0 +1,12 @@
+:root {
+    /* colors */
+    --main-color: #57BF49;
+    --secondary-color: #F7F7F2;
+    --extra-color: #706F6F;
+
+    /* fonts */
+    --font1: "Open Sans", sans-serif; /* Medium 500 */
+    --font2: "Kanit", sans-serif; /* Light 300 */ 
+    --font3: "Roboto Condensed", sans-serif; /* Regular 400 */
+}
+
