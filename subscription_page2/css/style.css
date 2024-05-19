@@ -14,3 +14,70 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--back-color1);
+    width: 90%;
+    margin: auto;
+}
+
+#top {
+    background-color: var(--back-color2);
+    margin-top: .4em;
+    padding: .4em .2em;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#streamName {
+    text-decoration: none;
+    color: var(--highligh-color);
+    font-family: var(--font-top);
+    font-size: 2.4rem;
+}
+
+#top ul {
+    list-style-type: none;
+}
+
+#top ul li {
+    display: inline-block;
+}
+
+#top ul li a {
+    display: block;
+    text-decoration: none;
+    font-family: var(--font-base);
+    font-weight: 500;
+    color: var(--highligh-color);
+    padding: 1em;
+    margin: 0 .4em;
+}
+
+#top ul li a:hover {
+    color: var(--back-color2);
+    background-color: var(--highligh-color);
+}
+
+#titlePlans {
+    text-align: center;
+    font-family: var(--font-base);
+    font-size: 3.4rem;
+    color: var(--back-color2);
+    margin: 1.8rem 0;
+}
+
+#boxPlans {
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.plans {
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 1.6em;
+}
