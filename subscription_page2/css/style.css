@@ -1,0 +1,16 @@
+:root {
+    /* COLORS */
+    --highligh-color: #460D62;
+    --back-color1: #8A716A;
+    --back-color2: #C2B8B2;
+
+    /* FONTS */
+    --font-top: "Oswald", sans-serif; /* Semibold 600 */
+    --font-base: "Roboto", sans-serif; /* Light 300, Regular 400, Medium 500 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
