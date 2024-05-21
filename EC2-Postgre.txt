@@ -1,0 +1,7 @@
+CRIAR SENHAS(concluído), PRIVILÉGIOS PARA O USUÁRIO(verificar), PERMITIR CONEXÕES REMOTAS, CONFIGURAR O GRUPO DE SEGURANÇA, CONECTAR REMOTAMENTE
+
+psql -d postgre_aula -U postgres
+
+CREATE ROLE nome_do_usuario WITH LOGIN PASSWORD 'senha';
+
+GRANT CREATE ON DATABASE postgre_aula TO meu_usuario;
