@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn-i{
+            display: none;
+        }
+        .btn-o{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: .6em;
+            cursor: pointer;
+        }
+        .btn-i:checked + .btn-o + .btn-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" class="btn-i" id="btn-i">
+    <label for="btn-i" class="btn-o">Menu</label>
+    <nav class="btn-i btn-menu">
+        <ul>
+            <li><a href="#">Item1</a></li>
+            <li><a href="#">Item2</a></li>
+            <li><a href="#">Item3</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

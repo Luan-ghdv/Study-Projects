@@ -19,12 +19,19 @@
 <body>
     <header id="top">
         <a href="#" id="streamName">CineStream</a>
-
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="index.html">Planos</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
+        <div class="menuTop">
+            <input type="checkbox" id="buttom" class="btn-i hide">
+            <label for="buttom" class="btn-o hide">
+                <ion-icon name="menu-outline"></ion-icon>
+            </label>
+            <nav class="btn-i btn-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Planos</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <h1 id="titlePlans">Escolha os Planos</h1>
@@ -69,5 +76,8 @@
             <a href="#" class="btn">Assine Já</a>
         </div>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

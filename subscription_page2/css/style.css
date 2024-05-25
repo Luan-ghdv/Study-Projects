@@ -62,6 +62,10 @@ body {
     border-bottom: var(--highligh-color) 3px solid;
 }
 
+.hide {
+    display: none;
+}
+
 #titlePlans {
     text-align: center;
     font-family: var(--font-base);
@@ -74,7 +78,6 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    height: 320px;
 }
 
 .plans {
@@ -82,7 +85,9 @@ body {
     padding: 1em;
     background-color: var(--back-color2);
     border-radius: 6px;
-    box-shadow: 0px 0px 1px 1px;
+    /*box-shadow: 0px 0px 1px 1px;*/
+    box-shadow: 5px 5px 5px -5px;
+    border: 2px solid var(--alternative-color);
     display: flex;
     flex-direction: column;
 }
@@ -110,6 +115,7 @@ body {
     font-weight: 400;
     flex-grow: 1;
     font-size: 1.1em;
+    margin-bottom: 2em;
 }
 
 .plansBenefits li {

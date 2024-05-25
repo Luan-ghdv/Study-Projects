@@ -2,5 +2,28 @@
     body {
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    ion-icon {
+        font-size: 2.8em;
+        color: var(--highligh-color);
+    }
+
+    .btn-i {
+        display: none;
+    }
+
+    .btn-o:checked + .btn-i + .btn-menu {
+        display: block;
+    }
+
+    #boxPlans {
+        flex-direction: column;
+        justify-content: center;
     }
 }
