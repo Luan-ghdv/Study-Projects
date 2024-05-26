@@ -5,22 +5,38 @@
         min-height: 100vh;
     }
 
-    .hide {
-        display: block;
-    }
-
     ion-icon {
         font-size: 2.8em;
         color: var(--highligh-color);
+    }
+
+    .hide {
+        display: block;
     }
 
     .btn-i {
         display: none;
     }
 
-    .btn-o:checked + .btn-i + .btn-menu {
-        display: block;
+    .btn-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
+
+    .tiu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--back-color2);
+        margin-right: 30px;
+        border: 2px solid var(--alternative-color);
+    }
+
+    #buttom:checked ~ .btn-menu {
+        display: flex;
+    } 
 
     #boxPlans {
         flex-direction: column;
