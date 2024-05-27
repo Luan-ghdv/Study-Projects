@@ -1,0 +1,23 @@
+COMANDOS SIMPLES:
+cd - seleciona pasta/diretório para interagir
+ls - visualizar quais pastas/diretórios e arquivos tem no diretório selecionado 
+touch - criar arquivos e modifica-los
+clear - limpa a tela
+cat - faz exibir o arquivo selecionado
+man - manual do linux
+mkdir - cria pastas/diretórios
+rm - remove arquivos (possível também remover diretórios, porém tem outro comando para isso)
+rmdir - remove pastas/diretórios
+cp - copia arquivos e diretórios (se é na mesma pasta é necessário criar um novo nome para o arquivo copiado, se for para outra pasta isso não é necessário)
+mv - modificar e mover arquivos/diretórios (mv [nome do arquivo/diretório] [nome do diretório]/ para mover o arquivo)
+pwd - saber exatamente em qual pasta/diretório está no momento
+sudo apt-get upgrade - atualiza os apps/pacotes no OS (digitando o comando uma vez ele busca as atualizações, digitando novamente ele instala)
+sudo apt-get purge [nome] - delete um pacote/app
+sudo apt-get autoremove - limpa pacotes/apps desnecessários
+sudo apt-cache search [nome] - busca pacotes/apps
+
+
+COMANDOS AVANÇADOS:
+cp -r [nome da pasta]/* [nome da pasta] - copia um diretório e todos os seus arquivos para um novo diretório
+cp [nome do arquivo]* [nome da pasta] - copia todos arquivos que tem nome semelhantes para uma pasta
+ls -lh - visualização mais detalhada
