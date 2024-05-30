@@ -1,0 +1,35 @@
+O que é uma Rede?
+Uma rede serve para conectar dois pontos.
+
+Redes podem ser classificadas pela área física de abrangência delas.
+Nanorredes - usadas por nanotecnologia atráves de radiofrequência ou molecular;
+NFC (Near Field Communication) - feita por aparelhos sem fio próximos uns aos outros (poucos centímetros de distância), utilizando a tecnologia RFID (identificação por rádio frequência);
+BAN (Body Area Network) - Usado na área de saúde, onde no corpo há sensores como por exemplo os smartwatchs para fazer monitoramento.
+PAN (Personal Area Network) - Pequenas redes com alcance de poucos metros, exemplo bluetooth;
+WPAN (Wireless Personal Area Network) - Formar redes de dispositivos que estão próximos em uma área física, porém sem estar conectadores na internet;
+LAN (Local Area Network) - A rede em que a maioria das pessoas tem em casa;
+WLAN (Wireless Local Area Network) - Rede local sem fio;
+HAN (Home Area Network) - Rede caseira;
+SAN (Storage Area Network) - Rede de armazenamento;
+CAN (Campus Area Network) - Rede de campo ou rede de campus;
+MAN (Metropolian Area Network) - Rede metropolitana;
+WAN (Wide Area Network) - Rede de longo alcance;
+GAN (Global Area Network) - A internet (rede mundial de computadores);
+IAN (Internet Area Network) - Rede de área de Internet (nuvem);
+
+Internet = conexão de diversas redes.
+
+Serviços via Internet: Correio eletrônico (email), Voz sobre IP (VoIP, telefonia via rede de computadores), Videoconferência, Jogos online, www (World-Wide Web).
+Internet e web não são sinônimos! Web é um dos serviços disponíveis na Internet.
+
+Intranet - Rede privada com funcionamento e serviços similares aos usados na Internet;
+Extranet - Acesso remoto a uma rede privada;
+
+Deep Web - Parte da web que não é indexada por mecanismos de busca(robots.txt - Neste arquivo você configura quais páginas do site serão ou não indexadas por mecanismos de busca);
+Dark Web - Parte da Deep Web que necessita de mecanismos especiais de anonimato e criptografia para acesso;
+
+Terminal burro: terminal sem poder de processamento. Todo o processamento é feito pelo mainframe. Exemplo: caixa eletrônico de bancos.
+Serviços de terminal:
+Telnet não usa criptografia, SSH usa criptografia
+
+Redes ponto a ponto (Peer to Peer - P2P) - Tipos de rede mais usual no mercado SOHO (Small Office / Home Office). Outro tipo é compartilhamento de arquivos na internet, Ex: Torrent, eMule, etc. Podemos ter também dispositivos de armazenamento autônomos, chamados NAS. Redes P2P de compartilhamento de arquivos na Internet são, na realidade, um caso de armazenamento distribuído.
