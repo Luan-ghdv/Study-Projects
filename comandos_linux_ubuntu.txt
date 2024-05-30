@@ -11,13 +11,38 @@ rmdir - remove pastas/diretórios
 cp - copia arquivos e diretórios (se é na mesma pasta é necessário criar um novo nome para o arquivo copiado, se for para outra pasta isso não é necessário)
 mv - modificar e mover arquivos/diretórios (mv [nome do arquivo/diretório] [nome do diretório]/ para mover o arquivo)
 pwd - saber exatamente em qual pasta/diretório está no momento
-sudo apt-get upgrade - atualiza os apps/pacotes no OS (digitando o comando uma vez ele busca as atualizações, digitando novamente ele instala)
+sudo apt-get update - busca as atualizações apps/pacotes no OS 
+sudo apt-get upgrade - atualiza os apps/pacotes no OS
 sudo apt-get purge [nome] - delete um pacote/app
 sudo apt-get autoremove - limpa pacotes/apps desnecessários
 sudo apt-cache search [nome] - busca pacotes/apps
+head [nome do arquivo] - similar ao cat porém só o começo 
+tail [nome do arquivo] - ao contrário do head, só mostra o final
+grep '[nome da busca]' [arquivo] - faz uma busca dentro do arquivo para achar a palavrar que quiser
+find -name '[nome do arquivo]' - procura no sistema o arquivo/pasta que quer
+locate - similar ao find porém arquivos/pastas antigas com uma melhor desempenho
 
 
 COMANDOS AVANÇADOS:
 cp -r [nome da pasta]/* [nome da pasta] - copia um diretório e todos os seus arquivos para um novo diretório
 cp [nome do arquivo]* [nome da pasta] - copia todos arquivos que tem nome semelhantes para uma pasta
 ls -lh - visualização mais detalhada
+head -n [nº] [nome do arquivo] - somente a quantidade de linhas escolhido
+tail -n [nº] [nome do arquivo] - somente a quantidade final das linhas escholhido
+grep -i '[nome da busca]' [arquivo] - faz uma busca dentro do arquivo para achar a palavrar que quiser, independente se a palavra tem maiúsculos ou minúsculos
+grep -c '[nome da busca]' [arquivo] - quantas palavras que escolheu tem no arquivo
+find -iname '[nome do arquivo]' - procura no sistema o arquivo/pasta que quer. porém independente se a palavra tem maiúsculos ou minúsculos
+find -iname '[nome do arquivo]*' - multiplos arquivos/pastas com o mesmo nome
+locate -S - verifica os dados na máquina
+
+--COMANDOS NANO--
+ALT+A - SELECIONAR 
+ALT+6 - COPIA O SELECIONADO
+CTRL+K - RECORTA
+ALT+U - COLA O SELECIONADO
+ALT+/ - VAI PARA O FINAL DO TEXTO
+ALT+\ - VAI PARA O INÍCIO DO TEXTO
+ALT+G - VAI PARA UMA LINHA EXPECÍFICA
+CTRL+W - FAZER UMA BUSCA DENTRO DO ARQUIVO
+ALT+R - FAZ SUBSTITUIÇÃO
+
