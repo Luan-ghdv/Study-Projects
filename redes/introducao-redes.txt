@@ -33,3 +33,5 @@ Serviços de terminal:
 Telnet não usa criptografia, SSH usa criptografia
 
 Redes ponto a ponto (Peer to Peer - P2P) - Tipos de rede mais usual no mercado SOHO (Small Office / Home Office). Outro tipo é compartilhamento de arquivos na internet, Ex: Torrent, eMule, etc. Podemos ter também dispositivos de armazenamento autônomos, chamados NAS. Redes P2P de compartilhamento de arquivos na Internet são, na realidade, um caso de armazenamento distribuído.
+
+Computação cooperativa (paralelismo): Computação em cluster - vários computadores juntos para formar um só, são de uma mesma organização. Computação em grade - Similar a computação em cluster, porém não são só de uma organização. 
