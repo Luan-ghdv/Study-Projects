@@ -46,3 +46,19 @@ ALT+G - VAI PARA UMA LINHA EXPECÍFICA
 CTRL+W - FAZER UMA BUSCA DENTRO DO ARQUIVO
 ALT+R - FAZ SUBSTITUIÇÃO
 
+--COMANDOS VIM--
+i - modo inserção
+ESC - sair do modo inserção
+:x - salvar e sair
+:w - salvar
+:q - sair do vim
+:q! - saí do arquivo e vim sem salvar
+dd - deleta uma linha
+d + seta para cima ou d + seta para baixo - deleta linha de cima ou abaixo
+u - desfaz a ação anterior
+CTRL+R - refaz a ação anterior
+/[palavra] - para buscar a palavra no vim
+/[palavra]+ENTER - para a primeira palavra buscada, continuar apertando o ENTER vai para as próximas (SHIFT+N, volta para as palavras anteriores)
+:%/[palavra]/[substituir a palavar]/g - muda a palavra de todo o text
+:s/[palavra]/[substituir a palavar]/g - muda a palavra somente na linha selecionada
+
