@@ -47,3 +47,4 @@ CTRL + F5 - Recarrega o conteúdo da página totalmente do servidores, sem usar 
 CDN (Content Delivery Network) - Empresas multinacionais tem diversos servidores espalhados pelo mundo onde serve como um servidor cache para o servidor web.
 
 Cache, conteúdo dinâmico - É essencial para economizar recursos de processamento.
+Páginas dinâmicas são codificadas em uma linguagem de programação.
