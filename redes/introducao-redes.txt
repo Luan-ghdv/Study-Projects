@@ -48,3 +48,19 @@ CDN (Content Delivery Network) - Empresas multinacionais tem diversos servidores
 
 Cache, conteúdo dinâmico - É essencial para economizar recursos de processamento.
 Páginas dinâmicas são codificadas em uma linguagem de programação.
+
+Existem 2 maneiros de fazer cache de conteúdos dinâmicos: A primeira é fazer um cache no próprio servidor web. Armazenamos o resultado de execução como um arquivo HTML estático. Pode ser como um arquivo na unidade de armazenamento do servidor ou pode ser armazenado em memória (RAM). Vantagem: desempenho (menor uso do servidor e entra dos resultados mais rapidamente). Desvantagem: a página não será atualizada para o usuário durante o período do tempo de vida. Uma solução simples é o sistema CMS apagar o arquivo de chace assim que a página for atualizada! 
+A segunda alternativa é cache de páginas dinâmicas no servidor proxy reverso. Proxy reverso é um sistema usado como intermediário no acesso a um servidor. Note que não necessariamente é uma máquina separada; pode ser um software instalado na mesma máquina do servidor web. É a mesma ideia que vimos anteriormente, porém quem faz o cache é este servidor proxy reverso e não mais o servidor web.
+
+Em resumo, os sistemas de cache servem para economizarmos recursos processamento e rede. Aumentando o desempenho e diminuindo os custos.
+
+--Proxy--
+
+Um proxy é um intermediário entre uma origem e um destino.
+
+proxy direto (forward proxy) - Representa o cliente
+proxy reverso (reverse proxy) - Representa o servidor
+
+O sistema de proxy direto está cada vez mais em desuso, pois não consegue intermediar tráfego criptografado. O proxy direto também serve para o mascaramento do cliente, o servidor de destino pensará que a origem é o servidor proxy não o nosso cliente. Desvantangens: Uma máquina possivelmente não confiável como intermediária. Em geral só suporta tráfego web e não um sistema criptografado. Esta aplicação atualmente é feita por servidor VPN. Outra serventia do proxy direto é o controle de acesso (ex: firewall) no sentido da rede local para a internet. Um firewall no sentido da Internet para um servidor será um proxy reverso ( e não um proxy direto).
+
+O proxy reverso é um representando do servidor. 1. Controle de acesso (ex: firewall) no sentido da internet para a rede local. Um firewall no sentido da rede local para a internet será um proxy direto (e não um proxy reverso). 2. CDN (Content Delivery Network), com o CDN, o cliente nunca acessa o servidor web original diretamente, oferecendo uma camada adicional de segurança. O CDN pode funcionar como um firewall. O CDN pode oferecer opções de otimização e aumento de desempenho. 3. Balanceamento de carga, rodízio (round-robin): distribui requisições de maneira sequencial. Baseado na carga: distribui requisições de acordo com a carga do servidor.
