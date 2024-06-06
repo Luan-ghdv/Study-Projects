@@ -62,7 +62,6 @@ DELETE FROM cliente WHERE idcliente = 14; -- Remove o registro antigo se existir
 INSERT INTO cliente (idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, uf)
 VALUES (14, 'Jeferson', NULL, NULL, '1983-07-01', 'M', NULL, 'Brasileiro', NULL, NULL, NULL, NULL, 'União da Vitória', 'PR');
 
-	
 insert into cliente (idcliente, nome, cpf, rg, data_nascimento, genero, profissao, nacionalidade, logradouro, numero, complemento, bairro, municipio, uf)
 values (15, 'Jessica', null, null, null, 'F', 'Estudante', null, null, null, null, null, 'União da Vitória', 'PR')
 
@@ -72,7 +71,7 @@ select nome, data_nascimento from cliente; -- seleção específica
 
 select nome, data_nascimento as "Data de nascimento" from cliente; -- 'as' renomeia as colunas
 
-select 'CPF: ' || cpf || 'RG: ' || rg as "CPF e RG" from cliente;
+select 'CPF: ' || cpf || 'RG: ' || rg as "CPF e RG" from cliente; -- concatenação
 
 select * from cliente limit 3; -- limita a busca
 
@@ -90,5 +89,44 @@ select nome from cliente order by nome asc; -- ordem crescente (não precisa do 
 
 select nome from cliente order by nome desc; -- ordem decrescente
 
+-- 1. O nome, o gênero e a profissão de todos os clientes, ordenado pelo nome em ordem decrescente
+select nome, genero, profissao from cliente order by nome desc;
 
+-- 2. Os clientes que tenham a letra “R” no nome
+select nome from cliente where nome like '%r%';
 
+-- 3. Os clientes que o nome inicia com a letra “C”
+select nome from cliente where nome like 'C%';
+
+-- 4. Os clientes que o nome termina com a letra “A”
+select nome from cliente where nome like '%a';
+
+-- 5. Os clientes que moram no bairro “Centro”
+select nome, bairro from cliente where bairro = 'Centro' or bairro = 'Cto.' or bairro = 'Ctr.';
+
+-- 6. Os clientes que moram em complementos que iniciam com a letra “A”
+select nome, complemento from cliente where complemento like 'A%';
+
+-- 7. Somente os clientes do sexo feminino
+select nome, genero from cliente where genero like 'F';
+
+-- 8. Os clientes que não informaram o CPF
+select nome, cpf from cliente where cpf is null;
+
+-- 9. O nome e a profissão dos clientes, ordenado em ordem crescente pelo nome da profissão
+select nome, profissao from cliente order by profissao;
+
+-- 10. Os clientes de nacionalidade “Brasileira”
+select nome, nacionalidade from cliente where nacionalidade like 'Brasil%';
+
+-- 11. Os clientes que informaram o número da residência
+select nome, numero from cliente where numero is not null;
+
+-- 12. Os clientes que moram em Santa Catarina
+select nome, uf from cliente where uf like 'SC';
+
+-- 13. Os clientes que nasceram entre 01/01/2000 e 01/01/2002
+select nome, data_nascimento from cliente where data_nascimento between '01/01/2000' and ' 01/01/2002';
+
+-- 14. O nome do cliente e o logradouro, número, complemento, bairro, município e UF concatenado de todos os clientes
+select nome || ' - ' || logradouro || ' - ' || numero || ' - ' || complemento || ' - ' || bairro || ' - ' || municipio || ' - ' || uf from cliente;
