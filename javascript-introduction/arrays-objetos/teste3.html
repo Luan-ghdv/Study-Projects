@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="mostrar">
+    <script>
+        const lista = new Array();
+
+        while(true) {
+            let pessoa = prompt("Digite o seu nome (para terminar é só digitar 'pare'): ");
+            if(pessoa.toLowerCase() === 'pare') {
+                break;
+            } else {
+                lista.push(pessoa);
+            }
+        }
+
+        for(let c = 0; c < lista.length; c++) {
+            document.getElementById("mostrar").innerHTML = lista;
+        }
+    </script>
+</body>
+</html>

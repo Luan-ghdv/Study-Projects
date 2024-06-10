@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="listaPessoas">
+
+    </ul>
+
+    <script>
+       const pessoas = [
+            {nome: "Matheus", email: "matheusluan.as@hotmail.com"}
+       ]
+
+
+
+       let listaPessoas = document.getElementById("listaPessoas");
+
+       for(let c = Number(0); c < pessoas.length; c = c + 1) {
+            listaPessoas.innerHTML = listaPessoas.innerHTML + "<li> " + pessoas[c].nome + ": " + pessoas[c].email + "</li>";
+       }
+    </script>
+</body>
+</html>
