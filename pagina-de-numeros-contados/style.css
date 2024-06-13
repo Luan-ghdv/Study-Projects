@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contador {
+    font-size: 12em;
+    display: block;
+    text-align: center;
+}
+
+.containerBtn {
+    display: block;
+    text-align: center;
+}
+
+.btn {
+    padding: 1.2em;
+    margin: 1.2em;
+    background-color: grey;
+    color: white;
+    border-radius:  6px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.btn:nth-child(1):hover {
+    background-color: red;
+}
+
+.btn:nth-child(2):hover {
+    background-color: rgb(116, 116, 18);
+}
+
+.btn:nth-child(3):hover {
+    background-color: green;
+}
