@@ -62,3 +62,18 @@ CTRL+R - refaz a ação anterior
 :%/[palavra]/[substituir a palavar]/g - muda a palavra de todo o text
 :s/[palavra]/[substituir a palavar]/g - muda a palavra somente na linha selecionada
 
+--USUÁRIOS E GRUPOS--
+sudo adduser [nome] - cria um novo usuário
+sudo userdel --remove [nome] - deleta o usuário escolhido
+sudo usermod -c '[antigo nome]' [novo nome] - mudar o nome do display do usuário
+sudo usermod -l [nome novo] -d /home/[nome novo] -m [nome antigo] - mudar o nome do usuário no diretório
+sudo usermod -L [nome] - bloqueia o usuário
+sudo usermod -U [nome] - desbloqueia o usuário
+getent group - mostra uma listagem de grupos criados no sistema
+sudo groupadd -g [numeração única] [nome do grupo] - cria um grupo com uma numeração
+sudo groupdel devs - deleta um grupo
+groups [nome do usuário] - para visulizar em qual grupo o usuário pertence
+sudo usermod -a -G [nome do grupo] [nome do usuário] - mudar usuário de grupo
+sudo gpasswd -d [nome do usuário] [nome do grupo] - remover usuário do grupo
+sudo su - comando para se tornar um super usuário sem a necessidade de usar o sudo
+passwd - mudar a senha do usuário
