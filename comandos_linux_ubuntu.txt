@@ -21,6 +21,9 @@ tail [nome do arquivo] - ao contrário do head, só mostra o final
 grep '[nome da busca]' [arquivo] - faz uma busca dentro do arquivo para achar a palavrar que quiser
 find -name '[nome do arquivo]' - procura no sistema o arquivo/pasta que quer
 locate - similar ao find porém arquivos/pastas antigas com uma melhor desempenho
+ctrl+shift+c - para copiar no terminal
+ctrl+shift+v - para colar no terminal
+history - histórico de comandos digitados
 
 
 COMANDOS AVANÇADOS:
@@ -77,3 +80,73 @@ sudo usermod -a -G [nome do grupo] [nome do usuário] - mudar usuário de grupo
 sudo gpasswd -d [nome do usuário] [nome do grupo] - remover usuário do grupo
 sudo su - comando para se tornar um super usuário sem a necessidade de usar o sudo
 passwd - mudar a senha do usuário
+
+--ENTENDENDO PERMISSÕES--
+. 1 222 333 444
+. 1: diretório ou arquivo
+. 222: Permissões do owner (dono)
+. 333: Permissões do grupo (que o arquivo pertence)
+. 444: Permissões dos demais usuários (que não são donos do arquivo e também não fazem parte do grupo do arquivo)
+
+. 1 222 333 444 <-> drwxr-xr-x
+. 1 serve para d ou -: diretório ou arquivo
+. 222: Permissões do owner (dono)
+. 333: Permissões do grupo
+. 444: Permissões dos usuários
+. d: directory = diretório
+. r: read = ler
+. w: write = escrever, editar
+. x: executar = executar
+. -: não há permissão
+
+. drw-rw-r--: diretório, owner e grupo com permissão de ler e escrever, demais só com permissão de ler
+. -r--r--r--: arquivo, só a permissão de leitura para todos
+
+--ALTERANDO PERMISSÕES: MODO NUMÉRICO--
+. Comando  para laterar permissões: chmod xxx file/dir
+. Onde 'x' representa as permissções em números:
+. 0: Sem permissão ---
+. 1: Executar --x
+. 2: Escrever -w-
+. 3: Ler e Executar -wx
+. 4: Ler r--
+. 5: Ler e executar r-x
+. 6: Ler e escrever rw-
+. 7: Ler, escrever e executar rwx
+
+--ALTERANDO PERMISSÕES: MODO SIMBÓLICO--
+. Comando para laterar permissões: chmod args file/dir
+. Onde 'args' pode ser representado por:
+. +: Adiciona permissão a um arquivo ou diretório
+. -: Remove permissão a um arquivo ou diretório
+. =: Determina as permissões, substituindo as anteriores
+. u: Dono do arquivo (user/owner)
+. g: Grupo (group)
+. o: Outros (others)
+. a: Todos (all)
+
+chown [nome do usuário] [nome do arquivo] - altera o proprietário do arquivo
+chown [nome do usuário]:[nome do grupo] [nome do arquivo] - altera o proprietário e grupo do arquivo
+sudo chgrp [nome do grupo] [nome do arquivo] - altera o grupo do arquivo
+
+--REDES--
+ping [DNS do site ou IP] - verifica a conexão
+netstat - mostra todas as conexões do sistema
+ifconfig - visualizar suas conxeões de rede
+nslookup [DNS site] - mostra o nome e ip do site
+sudo tcpdump - possível ver todas as conexões tcp vindo para a máquina
+hostname -I - verificar o ip da nossa máquina
+sudo ufw app list - verifica as configurações do firewall
+sudo ufw allow in "[nome]" - adiciona uma nova configuração no firewall
+
+--COMPACTAÇÃO E DESCOMPACTAÇÃO DE ARQUIVOS E DIRETÓRIOS--
+tar -c - criar arquivo para compactação
+tar -cz - comprimir o arquivo em gzip
+tar -czv - mostrar o progresso de compactação
+tar -czvf - especificar o arquivo a ser compactado
+tar -czvf [nome da compactação].tar.gz [nome do arquivo ou diretório a ser compactado] - faz todo o processo mostrado acima (para multiplos arquivos ou diretórios e só colocar um ao lado do outro]
+tar -xzvf [nome da compactação] - descompacta os arquivos e pastas
+tar -xzvf [nome da compactação] -C [nome do diretório]/ - escolher onde descompactar
+zip -r [nome da compactação].zip - compacta arquivos ou diretórios em zip
+unzip [nome da compactação] -d [nome do diretório]/ - descompactar em zip
+tar -tvf [nome da compactação] - verifica o que tem dentro da compactação
