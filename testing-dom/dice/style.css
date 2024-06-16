@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rolarBtn {
+    padding: 16px;
+    background-color: rgb(88, 88, 235);
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 1.4em;
+}
+
+#numero {
+    font-size: 2.4em;
+}
