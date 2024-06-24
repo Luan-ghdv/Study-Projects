@@ -1,11 +1,11 @@
-/* let nome = prompt("Como se chama?");
-window.alert(`Olá, ${nome}! Seja bem-vindo!`); */
+/* let nome = window.prompt("Qual é o seu nome? ");
+window.alert("Olá, " + nome + "! Prazer em te conhecer!"); */
 
+let username;
+let myText = document.getElementById("myText");
 
-const nome = document.getElementById("nome");
-const btn = document.getElementById("btn");
-const result = document.getElementById("result");
-let cc;
+document.getElementById("mySubmit").onclick = function() {
+    username = document.getElementById("myName").value;
+    myText.textContent = `Olá, ${username}! Prazer em te conhecer!`;
+}
 
-cc = btn.value;
-console.log(cc);
