@@ -64,3 +64,15 @@ proxy reverso (reverse proxy) - Representa o servidor
 O sistema de proxy direto está cada vez mais em desuso, pois não consegue intermediar tráfego criptografado. O proxy direto também serve para o mascaramento do cliente, o servidor de destino pensará que a origem é o servidor proxy não o nosso cliente. Desvantangens: Uma máquina possivelmente não confiável como intermediária. Em geral só suporta tráfego web e não um sistema criptografado. Esta aplicação atualmente é feita por servidor VPN. Outra serventia do proxy direto é o controle de acesso (ex: firewall) no sentido da rede local para a internet. Um firewall no sentido da Internet para um servidor será um proxy reverso ( e não um proxy direto).
 
 O proxy reverso é um representando do servidor. 1. Controle de acesso (ex: firewall) no sentido da internet para a rede local. Um firewall no sentido da rede local para a internet será um proxy direto (e não um proxy reverso). 2. CDN (Content Delivery Network), com o CDN, o cliente nunca acessa o servidor web original diretamente, oferecendo uma camada adicional de segurança. O CDN pode funcionar como um firewall. O CDN pode oferecer opções de otimização e aumento de desempenho. 3. Balanceamento de carga, rodízio (round-robin): distribui requisições de maneira sequencial. Baseado na carga: distribui requisições de acordo com a carga do servidor.
+
+--VPN--
+
+VPN (Virtual Private Network) - Rede privada virtual. VPN "original" site-to-site VPN ("site" neste contexto significa "infraestrutura de uma empresa" e não "website"). Camada 3 do modelo OSI (camada de Rede) Protocolo IPsec.
+
+Como podemos ligar duas redes?
+1. Ligando fisicamente as duas redes com roteadores e cabos.
+2. Alugar a rede privada de uma operadora de telecomunicações.
+3. Usar uma rede pública (Internet) (forma insegura).
+4. Usar uma rede pública (internet com VPN) (forma segura).
+
+Ou seja, o VPN cria uma rede privada (segura) através de uma rede pública (Internet). Conecta dois pontos (duas redes, uma máquina e uma rede, ou duas máquinas).
