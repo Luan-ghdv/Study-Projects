@@ -76,3 +76,22 @@ Como podemos ligar duas redes?
 4. Usar uma rede pública (internet com VPN) (forma segura).
 
 Ou seja, o VPN cria uma rede privada (segura) através de uma rede pública (Internet). Conecta dois pontos (duas redes, uma máquina e uma rede, ou duas máquinas).
+
+Servido VPN - Serviço similar ao de um servidor proxy. Operacomo um intermediário emtre a origem e o destino.
+Servidor proxy: Criptografia opcional. Normalmente intermedeia apenas tráfego web.
+Servido VPN: Criptografia obrigatória, mais "parruda". Pode intermediar todo tipo de tráfego.
+
+Servidor VPN opera como um intermediário entre a origem e o destino. O destino vê como origem o servidor VPN e não o cliente.
+
+Primeiro objetivo: burlar algum tipo de restrição de acesso (geográfica ou firewall)
+Segundo objetivo: privacidade (anonimato)
+
+É possível detectar o verdadeiro cliente através dos arquivos de log do servidor VPN!
+
+Terceiro objetivo: criptografia
+"Se eu tiver um serviço de VPN, todo o meu tráfego com a Internet estará criptografado?" Depende! Somente no tráfego dentro do túnel VPN há 100% de garantia de criptografia
+Dados serão criptografados apenas se o servidor sendo acessado utilizar criptografia (atualmente a maioria usa)
+
+VPN SSL - Plugin no navegador web, servidor VPN, usado apenas no acesso a sites específicos. Camada 6 do modelo OSI (Apresentação), protocolo TLS.
+
+VPN IPsec - Software adicional, Site-to-site ou servidor VPN, pode ser usado para todo o tráfego. Camada 3 do modelo OSI (Rede), protocolo IPsec
