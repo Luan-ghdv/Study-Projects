@@ -1,0 +1,10 @@
+Sistema binário: 0 e 1, bit (binary digit)
+
+Sistema decimal: base 10
+Ex: 4731
+1 = 1 x 1
+3 = 3 x 10
+7 = 7 x 100
+4 = 4 x 1000
+
+1 dígito hexa = 4 bits
