@@ -8,3 +8,7 @@ Ex: 4731
 4 = 4 x 1000
 
 1 dígito hexa = 4 bits
+---------------------------------------------------------------------------
+Zeros à esquerda são irrelevantes e não têm qualquer efeito. Também se aplica a outras bases numéricas como binário e hexadecimal.
+
+Preenchimento (padding): Normalmente queremos "casar" o número de bits dos dados com o número de bits do campo que será usado para transportá-los.
