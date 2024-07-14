@@ -12,3 +12,15 @@ Ex: 4731
 Zeros à esquerda são irrelevantes e não têm qualquer efeito. Também se aplica a outras bases numéricas como binário e hexadecimal.
 
 Preenchimento (padding): Normalmente queremos "casar" o número de bits dos dados com o número de bits do campo que será usado para transportá-los.
+---------------------------------------------------------------------------
+Overflow (OF): O dado a ser transportado ou armazenado tem uma quantidade de bits maior do que a estrutura de dados. Temos algumas soluções para esse problema, as quatro mais comuns:
+1. Fragmentação de dados;
+2. Erro de overflow (OF);
+3. Desconsiderar os bits que não "cabem";
+4. Somar os bits que não "cabem" aos demais.
+---------------------------------------------------------------------------
+Bases numéricas: Base 10 (decimal), Base 2 (binário), Base 16 (hexadecimal)
+
+Binário para decimal
+10101100 - para converter para decimal começando da direita para a esquerda, multiplcar os números por multiplos de 2, ex: 128, 64, 32, 16, 8, 4, 2, 1
+Depois é só somar os valores que são 1, ex: 128 + 32 + 8 + 4 = 172 
