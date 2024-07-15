@@ -24,3 +24,22 @@ Bases numéricas: Base 10 (decimal), Base 2 (binário), Base 16 (hexadecimal)
 Binário para decimal
 10101100 - para converter para decimal começando da direita para a esquerda, multiplcar os números por multiplos de 2, ex: 128, 64, 32, 16, 8, 4, 2, 1
 Depois é só somar os valores que são 1, ex: 128 + 32 + 8 + 4 = 172 
+---------------------------------------------------------------------------
+Decimal para binário
+512 = 1000000000
+
+Da mesma forma que binário para decimal usando os multiplos de 2. Porém deve se parar no primeiro multiplo que é maior que o valor da conversão.
+
+79 = 1001111
+4648 = 1001000101000
+---------------------------------------------------------------------------
+Binário para hexadecimal
+
+Com quatro bits podemos representar números de 0 a 15 (decimal) ou 0 a f (hexadecimal).
+
+Por exemplo, é mais fácil escrever 3C27 do que 11110000100111.
+
+1100 = 12
+11101010010 = 752
+
+Números hexadecimais são de 0 a F, sendo a até f equivalentes a 10, 11, 12, 13, 14, 15 e 16. Para a conversão é necessário fazer uma separação de quatro em quatro números do valor a ser convertido da direita para a esquerda, soma e juntar os números.
