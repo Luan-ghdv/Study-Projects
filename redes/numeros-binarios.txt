@@ -43,3 +43,50 @@ Por exemplo, é mais fácil escrever 3C27 do que 11110000100111.
 11101010010 = 752
 
 Números hexadecimais são de 0 a F, sendo a até f equivalentes a 10, 11, 12, 13, 14, 15 e 16. Para a conversão é necessário fazer uma separação de quatro em quatro números do valor a ser convertido da direita para a esquerda, soma e juntar os números.
+---------------------------------------------------------------------------
+Hexadecimal para binário
+
+0x4A3 (O 0x significa que o número está em hexadecimal)
+
+4 = 8 4 2 1 = 0100
+A = 8 4 2 1 = 1010
+3 = 8 4 2 1 = 0011
+RESULTADO 010010100011
+
+F19H (O h significa que o número está em hexadecimal)
+
+F = 8 4 2 1 = 1111
+1 = 8 4 2 1 = 0001
+9 = 8 4 2 1 = 1001
+---------------------------------------------------------------------------
+Hexadecimal para decimal
+
+2C9h
+
+Similar ao decimal, porém ao invés de usar potências de 2 usa a de 16.
+
+2 = 16 elevado a 0 = 256
+C = 16 elevado a 1 = 16
+9 = 16 elevado a 0 = 1
+
+Agora devemos multiplicar pela casa em que o número estiver:
+1 x 9 = 9
+16 x 12 = 192
+256 x 2 = 512
+
+No final é só somar os valores:
+9 + 192 + 512 = 713
+
+1B40h
+0 = 16 elevado a 0 = 1
+4 = 16 elevado a 1 = 16
+B = 16 elevado a 2 = 256
+1 = 16 elevado a 3 = 4096
+
+1 x 0 = 0
+16 x 4 = 64
+256 x 11 = 2816
+4096 x 1 = 4096
+
+1 + 64 + 2816 + 4096 = 6977
+---------------------------------------------------------------------------
