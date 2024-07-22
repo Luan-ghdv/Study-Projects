@@ -12,14 +12,31 @@
 
         <form>
             <div class="container">
-                <label>Digite o seu nome: </label>
+                <label>Digite o seu nome: </label> <br>
                 <input type="text">
             </div>
 
             <div class="container"> 
-                <label>Digite o seu e-mail:</label>
+                <label>Digite o seu e-mail:</label> <br>
                 <input type="email">
             </div>
+
+           <fieldset class="container">
+                <legend>Casado(a)?</legend>
+
+                <div>
+                    <input type="radio" id="casado" value="casado" name="selecao">
+                    <label for="casado">Casado(a)</label>
+                </div>
+                <div>
+                    <input type="radio" id="solteiro" value="solteiro" name="selecao">
+                    <label for="solteiro">Solteiro(a)</label>
+                </div>
+                <div>
+                    <input type="radio" id="solteiro" value="solteiro" name="selecao">
+                    <label for="solteiro">Viúvo(a)</label>
+                </div>
+           </fieldset>
 
             <div class="container" id="btnContainer">
                 <button id="btn">Enviar</button>
