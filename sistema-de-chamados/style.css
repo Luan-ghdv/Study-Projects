@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 260px 1fr; 
+    grid-template-rows: auto; 
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    grid-column: 1 / 2; 
+    grid-row: 1 / 2; 
+    background-color: rgb(190, 190, 253);
+    padding: 20px;
+}
+
+header img {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto 20px; 
+    padding: 2px;
+    border: 1px solid rgb(23, 23, 58);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-bottom: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(23, 23, 58);
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(23, 23, 58, 0.1);
+    border-right: 4px solid rgb(23, 23, 58);
+}
+
+main {
+    grid-column: 2 / 2; 
+    grid-row: 1 / 2;
+    background-color: rgb(23, 23, 58);
+    padding: 20px;
+    overflow-y: auto; 
+}
+
+#top h1 {
+    background-color: rgb(190, 190, 253);
+    color: rgb(23, 23, 58);
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+#filtro-label {
+    color: rgb(190, 190, 253);
+    font-weight: 600;
+}
+
+#chamados table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#chamados th,
+#chamados td {
+    border: 1px solid rgb(190, 190, 253);
+    padding: 8px;
+    text-align: left;
+}
+
+#chamados th {
+    background-color: rgb(190, 190, 253);
+    color: rgb(23, 23, 58);
+    text-transform: uppercase;
+}
+
+main > div {
+    margin-bottom: 10px;
+}
+
+main > div:nth-child(2) {
+    text-align: right;
+    margin-bottom: 20px;
+}
+main > div:nth-child(3) {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+main > div a,
+main > div select {
+    padding: 10px;
+    background-color: rgb(190, 190, 253);
+    color: rgb(23, 23, 58);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+main > div a:hover,
+main > div select:hover {
+    background-color: rgba(190, 190, 253, 0.8);
+}

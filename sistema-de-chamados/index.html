@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://www.shutterstock.com/shutterstock/photos/2465042445/display_1500/stock-photo-flat-illustration-in-grayscale-avatar-user-profile-person-icon-profile-picture-suitable-for-2465042445.jpg" alt="imagem perfil">
+        <nav>
+            <ul>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Chamados</a></li>
+                <li><a href="#">Chamados Concluídos</a></li>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="top">
+            <h1>Chamados</h1>
+        </div>
+    
+        <div id="filtroChamado">
+            <a href="#">Abrir Chamado</a>
+        </div>
+    
+        <div>
+            <label for="selecionar" id="filtro-label">Filtrar</label>
+            <select name="filtro" id="filtro-select">
+                <option value="">Selecione o tipo de chamado</option>
+                <option value="TI">TI</option>
+                <option value="Estrutura">Estrutura</option>
+            </select>
+        </div>
+    
+        <div id="chamados">
+            <table>
+               <thead>
+                   <tr>
+                        <th scope="cols">id</th>
+                        <th scope="cols">cliente</th>
+                        <th scope="cols">assunto</th>
+                        <th scope="cols">prioridade</th>
+                        <th scope="cols">status</th>
+                        <th scope="cols">criado em</th>
+                        <th scope="cols">#</th>
+                   </tr>
+               </thead>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
