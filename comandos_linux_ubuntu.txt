@@ -1,6 +1,7 @@
 COMANDOS SIMPLES:
 cd - seleciona pasta/diretório para interagir
 ls - visualizar quais pastas/diretórios e arquivos tem no diretório selecionado 
+ls -a - visualizar as pastas/diretórios e arquivos que estão ocultos
 touch - criar arquivos e modifica-los
 clear - limpa a tela
 cat - faz exibir o arquivo selecionado
